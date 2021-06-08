@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
         execvp_args[1] = NULL;
         execvp(execvp_args[0], execvp_args);
     } else {
-        int wc = wait(NULL);
+        wait(NULL);
     }
     return 0;
 }
